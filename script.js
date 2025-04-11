@@ -66,8 +66,5 @@ document.getElementById("form-feedback").addEventListener("submit", async (e) =>
     });
 
     alert("Feedback enviado com sucesso!");
-    document.getElementById("form-feedback").reset();
-  } catch (error) {
-    alert("Erro ao enviar feedback: " + error.message);
-  }
+    document.getElementById("feedbackForm").addEventListener(...)
 });
