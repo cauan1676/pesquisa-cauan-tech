@@ -1,59 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pesquisa de Satisfação - Cauan Tech Soluções</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container">
-    <h1>Pesquisa de Satisfação</h1>
-    <form id="feedbackForm">
-      <label for="nome">Seu nome:</label>
-      <input type="text" id="nome" required>
-
-      <label for="nota">Nota de 1 a 10:</label>
-      <input type="number" id="nota" min="1" max="10" required>
-
-      <label for="atendimento">Como foi o atendimento?</label>
-      <select id="atendimento" required>
-        <option value="">Selecione</option>
-        <option value="Ótimo">Ótimo</option>
-        <option value="Bom">Bom</option>
-        <option value="Regular">Regular</option>
-        <option value="Ruim">Ruim</option>
-      </select>
-
-      <label for="comentario">Comentário:</label>
-      <textarea id="comentario" rows="4" placeholder="Digite aqui..."></textarea>
-
-      <button type="submit">Enviar</button>
-    </form>
-    <p id="mensagem" class="mensagem"></p>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pesquisa de Satisfação - Cauan Tech Soluções</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header img {
+      max-width: 150px;
+      border-radius: 8px;
+    }
+    header h1 {
+      margin-top: 10px;
+      color: #0a640a;
+    }
+  </style>
 </head>
 <body>
-  <h1>Pesquisa de Satisfação</h1>
-  
-  <form id="form-feedback">
-    <input type="text" id="nome" placeholder="Seu nome" required />
-    <input type="number" id="nota" placeholder="Nota (1 a 10)" required />
-    <textarea id="comentario" placeholder="Comentário" required></textarea>
+  <header>
+    <img src="logo.png" alt="Logo da Cauan Tech Soluções" />
+    <h1>Cauan Tech Soluções</h1>
+  </header>
+
+  <h2 style="text-align: center;">Pesquisa de Satisfação</h2>
+
+  <form id="feedbackForm" class="container">
+    <label for="nome">Seu nome:</label>
+    <input type="text" id="nome" required />
+
+    <label for="nota">Nota de 1 a 10:</label>
+    <input type="number" id="nota" min="1" max="10" required />
+
+    <label for="atendimento">Como foi o atendimento?</label>
+    <select id="atendimento" required>
+      <option value="">Selecione</option>
+      <option value="Ótimo">Ótimo</option>
+      <option value="Bom">Bom</option>
+      <option value="Regular">Regular</option>
+      <option value="Ruim">Ruim</option>
+    </select>
+
+    <label for="comentario">Comentário:</label>
+    <textarea id="comentario" rows="4" placeholder="Digite aqui..." required></textarea>
+
     <button type="submit">Enviar</button>
+    <p id="mensagem" class="mensagem"></p>
   </form>
 
-  <script type="module" src="script.js"></script>
+  <script src="script.js" type="module"></script>
 </body>
 </html>
